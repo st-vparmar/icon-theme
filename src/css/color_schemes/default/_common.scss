@@ -1,0 +1,30 @@
+/** common classes **/
+
+.common-default-btn {
+	color: $color-white;
+	background-color: $icon-green;
+	border-color: $icon-green;
+}
+
+.common-btn-hover {
+	background-color: $icon-primary-palette-1;
+	border-color: $icon-primary-palette-1;	
+}
+
+.common-fill-color {
+	background-color: $icon-green;
+	border-color: $icon-green;
+	color: $color-white;
+	&:hover {
+		background-color: $icon-primary-palette-1;
+		border-color: $icon-primary-palette-1;
+	}
+}
+
+.icon-green-link-hover {
+	color : $icon-green;
+	&:hover {
+		color: $icon-primary-palette-1;  
+	}
+}
+

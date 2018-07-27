@@ -1,0 +1,11 @@
+{
+  "LiferayTheme": {
+    "appServerPath": "/home/st38/project/ICON/liferay-ce-portal-7.0-ga7/tomcat-8.0.32",
+    "deployPath": "/home/st38/project/ICON/liferay-ce-portal-7.0-ga7/deploy",
+    "url": "http://localhost:8080",
+    "appServerPathPlugin": "/home/st38/project/ICON/Theme/icon-theme/.web_bundle_build",
+    "deployed": true,
+    "pluginName": "icon-theme",
+    "webBundleDir": "watching"
+  }
+}

@@ -1,0 +1,217 @@
+/* Header Section */
+
+#navigation {
+    min-height: 50px;
+    ul {
+    	padding-left: 0px;
+    	margin-bottom: 0px;
+    	li {
+	        display: inline-block;
+	        font-size: 16px;
+	        line-height: 30px;            
+	        padding: 10px;
+	        text-transform: uppercase;
+	        
+	        list-style-type: none;
+	    }
+    }
+}
+
+
+/** site logo **/
+#banner {	
+	padding-bottom: 20px;
+	
+	.header-wrapper {
+		padding: 15px 0px;
+	}
+	
+	#heading {
+        display: inline-block;
+        vertical-align: middle;
+    	line-height: 70px;
+        .site-title{
+        	display: inline-block;
+        	margin-top: 0px;
+            margin-bottom: 0px;
+        	padding: 10px;
+        	img {
+        		width: 100%;
+        		max-width: 250px;
+    			max-height: 70px;
+        	}
+        }  	
+    }
+	.user-signin-text{
+        float:right;
+    }
+    .right-nav-menu {
+		display: inline-block;
+	    vertical-align: middle;
+	    padding-right: 10px; 
+	    float: right;
+	    text-align: right;
+	    line-height: 70px;
+	    
+	    .user-avatar-link {
+	    	display: inline-block;
+    		vertical-align: middle;
+	    	line-height: 70px;
+	    }
+	   	
+    	.header-icon-link {
+	    	display: inline-block;
+	    	vertical-align: middle;
+	    	font-size: 34px;
+    		line-height: 70px;
+	    	@extend .common-header-element-margin; 
+	    	   	
+	    	&.img-book-icon {
+	    		width: 45px;
+	    		height: 30px;	
+	    	}    	 
+	    	img {
+	    		width: 100%;
+	    	}
+	    }
+		
+		.searchbar {
+			display: inline-block;
+			vertical-align: middle;
+			width: 40%;
+			height: 50px;
+			
+			@extend .common-header-element-margin; 
+			
+			section.portlet, 
+			section.portlet .portlet-content,
+			section.portlet .portlet-content .portlet-content-container,
+			section.portlet .portlet-content .portlet-content-container .portlet-body,
+			section.portlet .portlet-content .portlet-content-container .portlet-body .form,
+			section.portlet .portlet-content .portlet-content-container .portlet-body fieldset {
+				height: 100%;
+			}
+			.portlet-search {
+				height: 100%;
+				.portlet-title-text {
+					display: none;
+				}
+				header.portlet-topper {
+					display: none;
+				} 
+				.portlet-content {
+					border: 0;
+					padding: 0;
+				}
+				.portlet-content-container {
+					display: inline-block;
+					
+					.fieldset .form-group-inline {
+						position: relative;
+						vertical-align: top;
+						
+						&::before {
+							content: "\f002";
+						    position: absolute;
+						    top: 15px;
+						    right: 15px;
+						    display: inline-block;
+						    font: normal normal normal 14px/1 FontAwesome;
+						    font-size: 20px;
+						    text-rendering: auto;
+						    -webkit-font-smoothing: antialiased;
+						}
+
+						.search-input {
+							height: 50px;
+							padding-right: 40px;
+							border-radius: 100px;
+						}
+					}
+				}
+				
+				.lfr-ddm-field-group-inline .icon-monospaced {
+					display: none;
+				}				
+			}			
+		}
+		
+		.user-guide {
+			&:hover {
+				text-decoration: none;
+				.user-guide-text {
+					text-decoration: underline; 
+				}
+			}
+			.user-guide-text {
+				font-weight: 400;
+				margin-top: 0px;
+			    margin-bottom: 0;
+			    border: 2px solid;
+			    padding: 12px;
+			    border-radius: 100px;
+			    i {
+			    	font-size: 20px;
+			    	vertical-align: middle;
+			    	margin-left: 5px;
+			    }
+			}
+		}
+		
+		.portlet-user-personal-bar {
+			display: inline-block;
+			
+			.user-avatar-link {
+				.user-full-name {
+					display: none;
+				}
+			}
+			.user-icon{
+				position: relative;
+				span {
+					display: none;
+				}
+				&:before {
+				    content: "\f007";
+				    display: inline-block;
+				    font: normal normal normal 14px/1 FontAwesome;
+				    font-size: 30px;
+				    text-rendering: auto;
+				    -webkit-font-smoothing: antialiased;
+				    position: absolute;
+				    top: 5px;
+				    left: 5px;
+				}
+			}
+		}	
+	}	
+}
+
+@media (max-width: 1024px) {
+	#banner{
+		#heading .site-title, .right-nav-menu {
+			padding: 0px;
+		}
+	} 
+}
+
+@media (max-width: 767px) {	
+	#banner {
+		#heading, .right-nav-menu {
+			display: block;
+			float: none;
+			text-align: center; 			
+		}
+	}		
+}
+
+@media (max-width: 640px) {
+	#banner {
+		.right-nav-menu {
+			margin-top: 10px;
+			.searchbar {
+				width: 100%;			
+			}			
+		}
+	}
+}

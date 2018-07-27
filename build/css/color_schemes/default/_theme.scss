@@ -1,0 +1,117 @@
+/** colors **/
+
+.asset-title a,
+.asset-title a:hover {
+	color: $dark-gray;
+}
+
+.panel-title a:hover {
+	text-decoration: none;
+}
+
+/* user profile */
+.user-icon-color-2 {
+	background-color: transparent;
+	border: 2px solid $icon-green;
+}
+.user-avatar-link a {
+	color: $icon-green;
+}
+
+/* navigation tab */
+.navbar-default .navbar-nav li {
+	a , a span{
+		color: $icon-green;
+		&:hover {
+			color: $icon-primary-palette-1;
+		}		
+	}
+	&.active a,
+	&.active a:hover {
+		color: $icon-primary-palette-1;
+	}	
+}
+
+/** panel heading **/
+.panel-default > .panel-heading {
+	color: $dark-gray;
+    background-color: $default-gray;
+    border-bottom: 1px solid $icon-green;
+    border-top: 1px solid $icon-green;
+}
+
+/** alert messages **/
+.alert {
+	&.alert-info {
+		background-color: $icon-secondary-palette-2-pct10;
+    	border-color: $icon-secondary-palette-2-pct40;
+    	a {
+    		color: $icon-secondary-palette-2;
+    	}
+    	
+	}
+}
+
+
+/** tag selector **/
+.tagselector {
+	.textboxlistentry {
+		background-color: $icon-secondary-palette-5;
+		border: 1px solid $icon-secondary-palette-5;
+	}
+	.textboxlistentry-text , .textboxlistentry-remove {
+		color: $color-white;
+		background-color: transparent;
+		&:hover {
+			background-color: transparent;
+		}
+		.textboxlistentry-remove-hover {
+			background-color: transparent;
+		} 
+	}
+	.btn-default {
+		color: $dark-gray;
+		background-color: transparent;
+   		border: 2px solid $icon-green;
+		&:focus {
+			color: $dark-gray;
+			background-color: transparent;
+			box-shadow: none;
+		}
+	}	
+}
+
+.has-success, .has-error {
+	.control-label {
+		color: $dark-gray;
+	}
+}
+
+.text-warning {
+	color: $icon-green;	
+}
+
+/** pagination bar **/
+.pagination .active a{
+	background-color: $icon-green;
+	border-color: $icon-green;
+}
+
+.category-subscriptions a , .category-subscriptions a:hover{ /** subscription/rss **/
+	color: $icon-green;
+}
+
+/** breadcrumb **/
+ul.breadcrumb {
+	li a{
+		color: $shuttle-grey;
+	}	
+} 
+
+/** input webkit styling **/
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: transparent !important;
+    background-image: none !important;
+    color: $dark-gray !important;
+}    

@@ -1,0 +1,16 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+@import "custom/variables";
+@import "custom/common";
+@import "custom/aui";
+@import "custom/theme";
+@import "color_schemes/color-scheme";
+@import "custom/portlet";
+@import "custom/sections";

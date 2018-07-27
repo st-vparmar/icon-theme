@@ -1,0 +1,96 @@
+
+/** blog portlet , blog aggregator **/
+.portlet-blogs {
+	.entry-options a , .entry-social a , a.taglib-icon{
+		color: $icon-green;
+		&:hover {
+			color: $icon-primary-palette-1;
+		}
+	}
+	.entry-title h2 a{
+		color: $icon-primary-palette-1;
+	}
+	.subscribe {
+		a, a:hover {
+			color: $icon-green;
+		}
+	}
+	.panel-default > .panel-heading {
+		border-color: $icon-green;
+		.lexicon-icon {
+			fill: $icon-green;
+		}
+	}
+	.btn-cancel, .btn-link {
+		color: $dark-gray;
+		&:focus, &:active,
+		&:active:hover {
+			color: $dark-gray; 
+			background-color: transparent;
+			border: 0;
+			box-shadow: none;
+		}
+		&:hover {
+			color: $color-night-rider;	
+		}
+	}
+	#_com_liferay_blogs_web_portlet_BlogsPortlet_inputPermissionsHideOptionsLink a{
+		@extend .icon-green-link-hover;	
+	}
+}
+
+/** login portlet **/
+.portlet-login {
+	color: $dark-gray;
+	.navigation .presentation a {
+		color: $icon-green;		
+	}
+	.icon-monospaced .lexicon-icon {
+		fill: $icon-green;
+	}
+	a , a:hover {
+		color: $icon-green;
+	}
+}
+
+.sign-in.text-default {
+	color: $icon-green;
+	a:hover {
+		color: $icon-green;
+	}
+}
+
+
+/** portlet wiki **/
+.portlet-wiki .page-actions.top-actions a{
+	color: $icon-green;
+	&:hover {
+		color: $icon-primary-palette-1;
+	}		
+}
+
+.portlet-content-container .icons-container {
+	a {
+		@extend .icon-green-link-hover; 
+	}
+}
+
+/** Asset Publisher **/
+.portlet-asset-publisher {
+ 	.asset-title a{
+ 		color: $icon-primary-palette-1;
+ 	}
+ 	.header-title {
+ 		color: $icon-primary-palette-1;
+ 	}
+}
+
+/** portlet-form **/
+.portlet-forms {
+	.control-label {
+		margin-bottom: 8px;
+	}
+	.lfr-ddm-form-field-container {
+		padding: 10px 20px;
+	}
+}

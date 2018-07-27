@@ -1,0 +1,25 @@
+/* footer css */
+
+#footer {
+    .disclaimer-block {
+        width: 60%;
+        margin: 0 auto;
+        padding: 30px 0;
+        text-align: center;
+        p {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+/* responsive css */
+@media (max-width:767px){
+    #footer .disclaimer-block {
+        width:90%;
+        p {
+            font-size:14px;
+            line-height:20px;
+        }
+    }
+}
+

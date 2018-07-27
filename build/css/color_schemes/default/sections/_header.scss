@@ -1,0 +1,52 @@
+/* Header Section */
+
+#navigation {
+    background-color: $icon-green;
+    color: $color-white;
+    ul li a {
+    	color: $color-white; 
+	}
+}
+
+/* header */
+#banner {	
+    .right-nav-menu {
+    	.user-guide {
+    		.user-guide-text {
+    			color: $icon-green;
+    			border-color: $icon-green;
+    			&:hover {
+    				color: $icon-primary-palette-1;
+    				border-color:  $icon-primary-palette-1;
+    			}
+    		}    		
+    	}    	
+    	.user-avatar-link a:hover .user-icon-color-2, 
+    	.user-avatar-link a:hover .user-icon:before{
+    		color: $icon-primary-palette-1;
+    		border-color: $icon-primary-palette-1;
+    	}
+    	.header-icon-link:hover {
+    		color: $icon-primary-palette-1;
+    	}
+    	.portlet-user-personal-bar .user-icon:before {
+			color: $icon-green;
+		}
+		.searchbar .portlet-search .portlet-content-container .fieldset .form-group-inline {
+			.search-input {
+				border:2px solid $icon-green;
+				&:focus {
+					border-color: $icon-primary-palette-1;
+				}
+			}
+			&::before {
+				color: $icon-green;
+			}	
+			&:focus-within {
+  				&::before {
+					color: $icon-primary-palette-1;
+				}	
+			}
+		}
+    }
+}

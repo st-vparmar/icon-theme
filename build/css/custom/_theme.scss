@@ -1,0 +1,40 @@
+/** common liferay theme elemens **/
+
+@import "variables";
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;    
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px; 
+}
+
+/* liferay */
+.portlet-journal-content {
+	.portlet-content {
+		padding: 0px;
+	}
+	.portlet-title-text{
+		display: none;
+	}
+}
+
+.nav-tabs-default > li.active > a,
+.nav-tabs-default > li.active > a:focus,
+.nav-tabs-default > li.active > a:hover{
+	outline: none;
+}
+
+/** form control **/
+.has-success .form-control:focus,
+.has-error .form-control:focus {
+	box-shadow: none;
+}
+
+/** breadcrumb **/
+.breadcrumb > li + li:before {
+	content: '';
+}
